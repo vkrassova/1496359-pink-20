@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Крассова](https://up.htmlacademy.ru/adaptive/20/user/1496359).
-* Наставник: Александр Уразаев.
+* Наставник: [Александр Уразаев](https://up.htmlacademy.ru/adaptive/20/user/61574) .
 
 ---
 
