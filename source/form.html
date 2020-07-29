@@ -40,8 +40,119 @@
     </nav>
   </header>
   <main class="main-page">
+    <section class="contest-intro">
+      <h1 class="contest-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
     <section class="contest">
-      <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h2 class="visually-hidden">Получите шанс выйграть приз</h2>
+      <p class="contest__description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      </p>
+      <form class="contest__form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="contest__form-field data">
+          <ul class="data__list">
+            <li class="data__item">
+              <label class="data__label">
+                Фамилия:
+                <input class="data__input" type="text" placeholder="Укажите фамилию *" value="" required>
+              </label>
+            </li>
+            <li class="data__item">
+              <label class="data__label">
+                Имя:
+                <input class="data__input" type="text" placeholder="Введите ваше имя *" value="" required>
+              </label>
+            </li>
+            <li class="data_item">
+              <label class="data__label">
+                Отчество:
+                <input class="data__input" type="text" placeholder="Ну и отчество тоже" value="">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__form-field achievements">
+          <legend class="achievements__legend">Ваши безбашенные достижения в путушествии</legend>
+          <ul class="achievements__list">
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox" checked>Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox" checked>Обгорел на пляже
+              </label>
+            </li>
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox">Видел Чака Норриса
+              </label>
+            </li>
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox">Накупил сувениров
+              </label>
+            </li>
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox" checked>Удержал башню
+              </label>
+            </li>
+            <li class="achievements__item">
+              <label class="achievements__label">
+                <input class="achievements__input" type="checkbox">Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__form-field communications">
+          <legend class="communications__legend">Контактная информация</legend>
+          <ul class="communications__list">
+            <li class="communications__item">
+              <label class="communications__label">
+                Номер телефона
+                <input class="contest__form-input" type="text" placeholder="Номер, пожалуйста" value="">
+              </label>
+            </li>
+            <li class="communications__item">
+              <label class="contest__form-label">
+                Адрес почты
+                <input class="contest__form-input" type="email" placeholder="Введите почту *" value="" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="contest__form-field app">
+          <legend class="app__legend">
+            С каким приложением путешествовали?
+          </legend>
+          <ul class="app__list">
+            <li class="app__item">
+              <label class="app__label">
+                <input class="app__input" type="radio" checked>Pink для iOS
+              </label>
+            </li>
+            <li class="app__item">
+              <label class="app__label">
+                <input class="app__input" type="radio">Pink на Android
+              </label>
+            </li>
+            <li class="app__item">
+              <label class="app__label">
+                <input class="app__input" type="radio">Windows Phone
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="contest__comment">
+          <label class="contest__comment-label">Опишите свои эмоции
+            <textarea class="contest__comment-text" rows="7" cols="15">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </label>
+        </div>
+        <button type="submit">Отправить форму</button>
+        <p><span>*</span> - обязательные поля</p>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
@@ -69,8 +180,8 @@
       <h2 class="visually-hidden">Разработано</h2>
       <p class="developer__text">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">
-      <img src="https://via.placeholder.com/27x34" alt="HTML Academy логотип" width="27" height="34">
-    </a>
+        <img src="https://via.placeholder.com/27x34" alt="HTML Academy логотип" width="27" height="34">
+      </a>
     </section>
   </footer>
 </body>
