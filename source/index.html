@@ -107,26 +107,28 @@
     </section>
     <section class="price">
       <div class="price__wrapper slider">
-        <header class="price__header">
-          <h3 class="price__header-standart">
-            Стандарт
-          </h3>
-          <p class="price__standart">3,99 USD</p>
-        </header>
-        <dl class="price__list">
-          <div class="price__item">
-            <dt class="price__description">Розовыый фильтр</dt>
-            <dd class="price__check">V</dd>
-          </div>
-          <div class="price__item">
-            <dt class="price__description">Смайлики</dt>
-            <dd class="price__check">V</dd>
-          </div>
-          <div class="price__item">
-            <dt class="price__description">Комментарии</dt>
-            <dd class="price__check">X</dd>
-          </div>
-        </dl>
+        <h2 class="visually-hidden">Тарифы</h2>
+       <table class="price__list">
+         <thead class="price__list-head">
+           <tr class="price__list-head-line">
+             <th class="price__list-head-cell">
+               <p class="price__list-heading">Стандарт</p>
+               <p class="price__list-price">3,99 USD</p>
+             </th>
+           </tr>
+          </thead>
+           <tbody class="price__list-body">
+             <tr class="price__list-body-line">
+               <td class="price__list-body-cell">Розовый фильтр</td>
+             </tr>
+             <tr class="price__list-body-line">
+               <td class="price__list-body-cell">Смайлики</td>
+             </tr>
+             <tr class="price__list-body-line">
+               <td class="price__list-body-cell">Комментарии</td>
+             </tr>
+           </tbody>
+        </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
@@ -151,7 +153,7 @@
            <a class="contacts__link" href="https://yandex.ru/maps">ул. Большая Конюшенная, 19&sol;8</a>
         </li>
       </ul>
-      <img class="contacts__map" src="https://via.placeholder.com/320x200" alt="ул. Большая Конюшенная, 19/8" width="320" height="200">  
+      <img class="contacts__map" src="https://via.placeholder.com/320x200" alt="ул. Большая Конюшенная, 19/8" width="320" height="200">
     </section>
   </main>
   <footer class="main-footer">
