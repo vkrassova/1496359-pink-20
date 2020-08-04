@@ -1,0 +1,11 @@
+.site-list {
+  @include reset-list;
+}
+
+.site-list__item a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: $white;
+  text-transform: uppercase;
+}

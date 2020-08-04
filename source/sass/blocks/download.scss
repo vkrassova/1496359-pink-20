@@ -1,0 +1,32 @@
+.download {
+  background-color: $dark-blue;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+}
+
+.download__download-button {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  width: 280px;
+  border: 3px solid  $white;
+  border-radius: 29px;
+  padding: 21px 38px 21px 38px;
+  margin-bottom: 30px;
+}
+
+.download__store-list {
+  @include reset-list;
+}
+
+.download__description {
+  margin: 0;
+  font-weight: 300;
+  color: $white;
+}

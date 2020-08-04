@@ -1,0 +1,8 @@
+.user-photos {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user-photos__list {
+  @include reset-list;
+}
