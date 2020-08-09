@@ -1,3 +1,44 @@
 .page-header {
-  background-color: $dark-blue;
+  background-color: $main-dark;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    padding-top: 27px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 43px;
+    color: transparent;
+  }
+}
+
+.page-header__toggle {
+  @media (min-width:$desktop){
+    display: none;
+  }
+}
+
+.page-header__logo {
+  height: 23px;
+
+  @media (min-width: $tablet) {
+    height: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 173px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 20px 23px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 23px 20px 43px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }

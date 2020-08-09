@@ -1,0 +1,8 @@
+.store-list {
+  @include reset-list;
+  display: flex;
+  width: 204px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}

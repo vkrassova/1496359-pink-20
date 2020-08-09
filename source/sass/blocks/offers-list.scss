@@ -1,19 +1,57 @@
 .offers-list {
   @include reset-list;
   background-color: $light-gray;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.offers-list__item {
+  text-align: center;
 }
 
 .offers-list__title {
   margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
   font-weight: bold;
   font-size: 18px;
   color: $black;
-  margin-bottom: 24px;
+
+  @media (min-width: $tablet) {
+    width: 310px;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-bottom: 35px;
+    width: 240px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .offers-list__paragraph {
   margin: 0;
+  margin-bottom: 43px;
   font-weight: normal;
   font-size: 14px;
-  margin-bottom: 43px;
+
+  @media (min-width: $tablet) {
+    width: 310px;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop){
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }

@@ -1,3 +1,4 @@
 .social-list {
   @include reset-list;
+  display: flex;
 }
