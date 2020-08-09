@@ -12,7 +12,7 @@
 }
 
 .page-header__toggle {
-  @media (min-width:$desktop){
+  @media (min-width: $desktop) {
     display: none;
   }
 }
