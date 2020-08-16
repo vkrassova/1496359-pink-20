@@ -1,4 +1,12 @@
 .social-list {
   @include reset-list;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 53px;
+  // width: 180px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

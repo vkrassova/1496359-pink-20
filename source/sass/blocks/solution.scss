@@ -1,8 +1,14 @@
 .solution {
   position: relative;
-  padding-top: 46px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.solution__container {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.solution__wrap {
+  background-color: $light-gray;
 }
 
 .solution__paragraph {

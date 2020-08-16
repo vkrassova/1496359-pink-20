@@ -3,6 +3,10 @@
   height: 460px;
   background-repeat: no-repeat;
   background-color: $main-dark;
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 .intro-photo__title {
