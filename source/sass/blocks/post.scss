@@ -1,5 +1,14 @@
 .post {
+  padding-left: 17px;
   background-color: $light-gray;
+
+  @media (min-width: $tablet) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 27px;
+  }
 }
 
 .post__info {
@@ -21,8 +30,10 @@
 }
 
 .post__like-button {
+  padding: 0;
   font-weight: normal;
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
+  border: none;
 }

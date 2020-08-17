@@ -1,3 +1,44 @@
-// .main-nav {
-//  background-color: $menu-header;
-// }
+.main-nav__list {
+  @include reset-list;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #000000;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    border: none;
+  }
+}
+
+.main-nav__item a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: $white;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    line-height: 18px;
+    text-transform: none;
+  }
+}
+
+.main-nav__item {
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.15);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    border: none;
+  }
+}

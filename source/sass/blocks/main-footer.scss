@@ -1,4 +1,29 @@
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 180px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    width: 640px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
+}
+
 .main-footer__logo {
   display: block;
   margin-bottom: 48px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

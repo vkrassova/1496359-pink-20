@@ -2,52 +2,53 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--opened page-header--nojs">
+    <div class="page-header__container">
+    <div class="page-header__wrapper">
     <a class="page-header__logo">
-      <img src="img/logo-pink-white-tablet.svg" alt="Логотип" width="74" height="23">
+      <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
     </a>
+    <button class="page-header__toggle" type="button" title="открыть/закрыть меню">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
+    </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" title="открыть/закрыть меню">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a>
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               HTML Academy
             </a>
           </li>
         </ul>
-      </div>
     </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Фотоприложение PINK - взгляни на жизнь иначе</h1>
-    <section class="intro">
-      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-      <img src="https://via.placeholder.com/320x286" alt="пример работы приложения PINK" width="320" height="286">
-    </section>
     <section class="download">
-      <h2 class="visually-hidden">Скачайте приложение PINK</h2>
+      <div class=" download__container container">
+      <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+      <img class="download__photo" src="https://via.placeholder.com/150x150" alt="пример работы приложения PINK" width="150" height="150">
       <a class="download__download-button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <ul class="download__store-list store-list">
         <li class="store-list__item">
@@ -67,12 +68,16 @@
         </li>
       </ul>
       <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
-    <section class="solution-section">
+    <section class="solution">
+      <div class="solution__container container">
       <h2 class="visually-hidden">Предложения</h2>
-      <p class="solution-section__paragraph">Устали от серости мегаполиса?</p>
-      <p class="solution-section__paragraph">Нам есть, что вам предложить!</p>
-      <ul class="solution-section__offers offers-list">
+      <p class="solution__paragraph">Устали от серости мегаполиса?</p>
+      <p class="solution__paragraph">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="solution__wrap">
+      <ul class="solution__offers offers-list">
         <li class="offers-list__item">
           <h3 class="offers-list__title">Поднимает настроение</h3>
           <p class="offers-list__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -89,9 +94,16 @@
             новых</p>
         </li>
       </ul>
+      </div>
+      <div class="solution__inner container">
+      <h3 class="solution__title">Эффект на 24 часа!</h3>
+      <p class="solution__info-effect">Британские ученые провели исследования и доказали,
+        что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="solution__info-link">Узнать больше об исследовании</a>
+      </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="reviews__wrapper slider container">
         <h2 class="visually-hidden">Отзывы</h2>
         <blockquote class="reviews__item">
           <cite class="reviews__author-name">Николай Петров</cite>
@@ -158,6 +170,7 @@
     </section>
   </main>
   <footer class="main-footer">
+    <div class="main-footer__container">
     <a class="main-footer__logo logo">
       <img src="img/logo-pink-blue-mobile.svg" alt="логотип PINK" width="145" height="40">
     </a>
@@ -185,6 +198,7 @@
         <img src="https://via.placeholder.com/27x34" alt="HTML Academy логотип" width="27" height="34">
       </a>
     </section>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,5 +1,15 @@
+.developer {
+  display: flex;
+  align-items: center;
+}
+
 .developer__text {
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
-  margin: 0;
+}
+
+.developer__link {
+  display: block;
+  margin-left: auto;
 }

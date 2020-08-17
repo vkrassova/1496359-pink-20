@@ -1,0 +1,14 @@
+.store-list {
+  @include reset-list;
+  display: flex;
+  width: 204px;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-bottom: 38px;
+  }
+}

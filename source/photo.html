@@ -3,62 +3,70 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--opened page-header--nojs">
+    <div class="page-header__container">
+    <div class="page-header__wrapper">
     <a class="page-header__logo">
-      <img src="img/pink-mob-logo.svg" alt="Логотип" width="74" height="23">
+      <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
     </a>
+    <button class="page-header__toggle" type="button" title="открыть/закрыть меню">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
+    </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" title="открыть/закрыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a>
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
-              HTMLAcademy
+              HTML Academy
             </a>
           </li>
         </ul>
-      </div>
     </nav>
+    </div>
   </header>
   <main class="main-page">
     <section class="intro-photo">
+      <div class="container">
       <h1 class="intro-photo__title">Фотографии пользователей</h1>
+      </div>
     </section>
     <section class="intro-text">
+      <div class="container">
       <h2 class="visually-hidden">Фотографии пользователей приложения PINK</h2>
       <p class="intro-text__paragraph">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не
         хватает ваших?</p>
+      </div>
     </section>
     <section class="user-photos">
+      <div class="container">
       <h2 class="visually-hidden">Лента фотографий пользователей</h2>
       <ul class="user-photos__list">
-        <li class="user-photos__item">
+        <li class="user-photos__item user-photos__item--panorama">
           <p class="user-photos__sticker">Панорама дня</p>
           <a href="#">
             <img class="user-photos__img" src="https://via.placeholder.com/320x137"
               alt="Панорама гор, сфотографирована с горнолыжного подъемника" width="320" height="137">
           </a>
-          <div class="user-photos__post post">
+          <div class="user-photos__post user-photos__post--panorama post">
             <p class="post__info">Анна
               <span class="post__time">(5 минут назад)</span>
             </p>
@@ -160,6 +168,7 @@
           </div>
         </li>
       </ul>
+      </div>
     </section>
     <section class="load">
       <h2 class="visually-hidden">Загружайте свои фотографии</h2>
@@ -191,6 +200,7 @@
     </section>
   </main>
   <footer class="main-footer">
+    <div class="main-footer__container">
     <a class="main-footer__logo logo">
       <img src="img/logo-pink-blue-mobile.svg" alt="логотип PINK" width="145" height="40">
     </a>
@@ -218,6 +228,7 @@
         <img src="https://via.placeholder.com/27x34" alt="HTML Academy логотип" width="27" height="34">
       </a>
     </section>
+    </div>
   </footer>
 </body>
 </html>
