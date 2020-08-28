@@ -5,10 +5,11 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 28px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet) {
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 27px;
+    margin-left: 47px;
   }
 }

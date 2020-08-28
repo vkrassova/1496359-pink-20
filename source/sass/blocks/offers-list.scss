@@ -18,11 +18,17 @@
 
 .offers-list__item {
   text-align: center;
+
+  &:last-child {
+    .offers-list__paragraph {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .offers-list__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -36,7 +42,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 23px;
     width: 240px;
     text-align: center;
     font-size: 30px;
@@ -46,7 +52,7 @@
 
 .offers-list__paragraph {
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 32px;
   font-weight: normal;
   font-size: 14px;
 
