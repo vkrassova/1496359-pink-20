@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header page-header--opened page-header--nojs">
+  <header class="page-header page-header--closed page-header--nojs">
     <div class="page-header__container">
     <div class="page-header__wrapper">
     <a class="page-header__logo">
@@ -15,9 +15,12 @@
     </a>
     <button class="page-header__toggle" type="button" title="открыть/закрыть меню">
       <span class="visually-hidden">Открыть/закрыть меню</span>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
     </div>
-    <nav class="main-nav">
+    <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">
@@ -29,7 +32,7 @@
               Фотографии
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="form.html">
               Конкурс
             </a>
