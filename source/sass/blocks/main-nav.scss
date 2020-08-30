@@ -44,5 +44,10 @@
   @media (min-width: $desktop) {
     padding: 0;
     border: none;
+
+    &--active {
+      padding-bottom: 19px;
+      border-bottom: 2px solid white;
+    }
   }
 }

@@ -1,6 +1,22 @@
+.intro-text {
+  padding-top: 54px;
+  padding-bottom: 60px;
+}
+
+
 .intro-text__paragraph {
   margin: 0;
   text-align: center;
   font-weight: normal;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 440px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
 }

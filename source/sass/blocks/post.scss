@@ -1,9 +1,15 @@
 .post {
+  position: relative;
   padding-left: 17px;
+  padding-top: 25px;
+  padding-bottom: 26px;
   background-color: $light-gray;
 
   @media (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 31px;
     padding-left: 30px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop) {
@@ -13,27 +19,81 @@
 
 .post__info {
   margin: 0;
+  margin-bottom: 14px;
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 14px;
+  letter-spacing: 0.1em;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 3px;
+  }
 }
 
 .post__time {
+  text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
+
+  @media (min-width: $tablet) {
+    font-size: 13px;
+    letter-spacing: 0em;
+  }
 }
 
 .post__description {
   margin: 0;
-  font-weight: normal;
   margin-bottom: 25px;
+  font-weight: normal;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 31px;
+    font-size: 14px;
+    line-height: 24px;
+
+    &--big {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .post__like-button {
   padding: 0;
+  padding-left: 30px;
   font-weight: normal;
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    background-image: url("../img/icon-heart.svg");
+    width: 13px;
+    height: 12px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+
+    &::before {
+      bottom: 24px;
+      left: 256px;
+    }
+  }
+
+  &--panorama {
+    position: absolute;
+    top: 30px;
+    right: 34px;
+
+    &::before {
+      top: 0;
+      left: 98px;
+    }
+  }
 }

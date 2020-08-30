@@ -16,7 +16,7 @@
 
   &--index {
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 35% 39%, top;
+    background-position: center 39%, top;
 
     @media (min-width: $tablet) {
       background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
