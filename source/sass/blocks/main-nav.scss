@@ -22,6 +22,15 @@
   line-height: 32px;
   color: $white;
   text-transform: uppercase;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $button-active-pink;
+  }
 
   @media (min-width: $desktop) {
     line-height: 18px;

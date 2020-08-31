@@ -1,6 +1,26 @@
 .developer {
   display: flex;
+  width: 130px;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
+  transition: 0.2s linear;
+
+  &:hover {
+    path {
+      fill: #283645;
+    }
+
+    &:active {
+      path {
+        fill: $active-dark;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .developer__text {
@@ -11,5 +31,4 @@
 
 .developer__link {
   display: block;
-  margin-left: auto;
 }

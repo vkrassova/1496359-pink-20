@@ -10,18 +10,62 @@
   }
 
   @media (min-width: $desktop) {
-    width: 960px;
+    width: 895px;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .offers-list__item {
+  position: relative;
   text-align: center;
 
   &:last-child {
     .offers-list__paragraph {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 252px;
+
+    &:nth-child(1) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 165px;
+        right: 5px;
+        width: 270px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 165px;
+        right: 11px;
+        width: 270px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 165px;
+        right: -3px;
+        width: 270px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-repeat: no-repeat;
+      }
     }
   }
 }
@@ -64,6 +108,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
+    width: 252px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;

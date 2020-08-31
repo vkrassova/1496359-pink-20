@@ -21,7 +21,27 @@
 
 .main-footer__logo {
   display: block;
+  width: 145px;
+  height: 40px;
+  margin: 0 auto;
   margin-bottom: 48px;
+  transition: 0.2s linear;
+
+  &:hover {
+    path {
+      fill: $pink;
+    }
+  }
+
+  &:active {
+    .glasses {
+      fill: $button-active-pink;
+    }
+
+    path {
+      fill: $active-dark;
+    }
+  }
 
   @media (min-width: $tablet) {
     margin: 0;
