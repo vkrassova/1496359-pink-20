@@ -8,22 +8,6 @@
   }
 }
 
-// .user-photos__item {
-//   @media (min-width: $tablet) {
-//   width: 300px;
-
-//   &--panorama {
-//     width: 660px;
-//   }
-//  }
-
-//  @media (min-width: $desktop) {
-//    &--panorama {
-//      width: 940px;
-//    }
-//  }
-// }
-
 .user-photos__img {
   @media (min-width: $tablet) {
     width: 300px;
@@ -41,8 +25,8 @@
     height: 155px;
 
     &--panorama {
-      width: 620px;
       margin-bottom: 50px;
+      width: 620px;
     }
   }
 
